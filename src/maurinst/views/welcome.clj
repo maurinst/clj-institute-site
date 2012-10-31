@@ -1,11 +1,12 @@
 (ns maurinst.views.welcome
   (:require [maurinst.views.common :as common]
             [noir.content.getting-started])
-  (:use [noir.core :only [defpage]]))
+  (:use [noir.core :only [defpage]
+        hiccup.core]]))
 
 (defpage "/welcome" []
          (common/layout
-           [:p "Welcome to maurinst"]))
+           [:p "Welcome to the Mauritius Institute"]))
 
 (defpage "/my-page" []
   (html
