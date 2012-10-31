@@ -11,6 +11,7 @@ deploy:
 push:
 	git push
 	git push heroku master
+	heroku logs --tail
 
 start-local-dev:
 	lein run
