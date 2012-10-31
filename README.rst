@@ -1,4 +1,4 @@
-Clojure Demo on Heroku
-======================
+Website for the Mauritius Institute
+===================================
 
-Nothing to see here...
+More soon ...
