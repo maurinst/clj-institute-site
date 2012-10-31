@@ -1,8 +1,8 @@
 (ns maurinst.views.welcome
   (:require [maurinst.views.common :as common]
-            [noir.content.getting-started]
-            [hiccup.core])
-  (:use [noir.core :only [defpage]]))
+            [noir.content.getting-started])
+  (:use [noir.core :only [defpage]]
+        [hiccup.core :only [html]]))
 
 (defpage "/welcome" []
          (common/layout
@@ -12,7 +12,7 @@
   (html
     [:h1 "This is my first page!"]))
 
-(defpage "/my-page-2 []
+(defpage "/my-page-2" []
   (common/site-layout
     [:h1 "Welcome to my site!"]
     [:p "Hope you like it..."]))
