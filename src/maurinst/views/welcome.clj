@@ -6,3 +6,7 @@
 (defpage "/welcome" []
          (common/layout
            [:p "Welcome to maurinst"]))
+
+(defpage "/my-page" []
+  (html
+    [:h1 "This is my first page!"]))
